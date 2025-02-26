@@ -4,6 +4,13 @@ import logo from "./assets/logo.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState("Início");
+
+  const menuItem = {
+    Início: "#Início",
+    Equipe: "#Equipe",
+    Títulos: "#Títulos",
+  };
 
   return (
     <header className="bg-[#0B2D4B] shadow-md rounded-2xl h-[60px] mx-[10%] my-[10px] flex items-center relative font-poppins">
@@ -13,15 +20,18 @@ export default function Header() {
 
         {/* Menu Desktop*/}
         <nav className="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
-          <a href="#" className="text-white hover:text-gray-300">
-            Início
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            Equipe
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            Títulos
-          </a>
+          {["Início", "Equipe", "Títulos"].map((item) => (
+            <a
+              key={item}
+              href={menuItem[item]}
+              className={`hover:text-gray-300 ${
+                activeItem === item ? "text-white" : "text-white opacity-50"
+              }`}
+              onClick={() => setActiveItem(item)}
+            >
+              {item}
+            </a>
+          ))}
         </nav>
 
         {/* Botão "Saiba Mais" + Ícone do Menu Mobile */}
@@ -40,15 +50,18 @@ export default function Header() {
       {/* Menu Mobile */}
       {menuOpen && (
         <nav className="md:hidden mt-2 flex flex-col space-y-2 bg-[#0B2D4B] text-white p-4 rounded-2xl absolute top-[60px] left-0 right-0">
-          <a href="#" className="block hover:text-gray-300">
-            Início
-          </a>
-          <a href="#" className="block hover:text-gray-300">
-            Equipe
-          </a>
-          <a href="#" className="block hover:text-gray-300">
-            Títulos
-          </a>
+          {["Início", "Equipe", "Títulos"].map((item) => (
+            <a
+              key={item}
+              href={menuItem[item]}
+              className={`hover:text-gray-300 ${
+                activeItem === item ? "text-white" : "text-white opacity-50"
+              }`}
+              onClick={() => setActiveItem(item) & setMenuOpen(false)}
+            >
+              {item}
+            </a>
+          ))}
         </nav>
       )}
     </header>
