@@ -1,6 +1,5 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import logo from "../assets/logo.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +15,11 @@ export default function Header() {
     <header className="bg-[#0B2D4B] shadow-md rounded-2xl h-[70px] mx-[5%] my-[10px] flex items-center relative font-poppins">
       <div className=" mx-auto flex items-center h-full w-full px-4">
         {/* Logo */}
-        <img src={logo} alt="logo" className="h-[30px]" />
+        <img
+          src="./public/assets/logo/logo.png"
+          alt="logo"
+          className="h-[30px]"
+        />
 
         {/* Menu Desktop*/}
         <nav className="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
