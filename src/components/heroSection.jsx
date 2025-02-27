@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="flex flex-col lg:flex-row mx-[5%] my-[3%] font-poppins">
+    <section className="flex flex-col lg:flex-row mx-[5%] my-[4%] font-poppins">
       <div className=" items-center w-full">
         <img
           src="../public/assets/referenceImage/image.png"
