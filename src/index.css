@@ -3,3 +3,7 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
 }
+
+body {
+  background: #e8f1f2;
+}

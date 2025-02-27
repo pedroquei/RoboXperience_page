@@ -1,9 +1,11 @@
-import { useState } from "react";
-import Header from "./header";
-import "./App.css";
+import Home from "./pages/home";
 
 function App() {
-  return <Header />;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }
 
 export default App;
