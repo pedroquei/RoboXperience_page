@@ -3,7 +3,7 @@ export default function HeroSection() {
     <section className="flex flex-col lg:flex-row mx-[5%] mt-[100px] font-poppins">
       <div className=" flex flex-col justify-center items-center w-full ">
         <img
-          src="../public/assets/referenceImage/image.png"
+          src="/assets/referenceImage/image.png"
           alt="Robô"
           className=" rounded-3xl shadow-3xl"
         />
