@@ -1,11 +1,11 @@
 export default function AboutSection() {
   return (
     <section className=" bg-[#fcbe03] rounded-2xl m-[5%] p-5 md:p-0 flex flex-col  md:flex-row md:items-center">
-      <div className=" bg-[#808080] rounded-2xl flex justify-center md:w-[60%]">
+      <div className=" bg-[#808080] rounded-2xl flex justify-center ">
         <img
           src="/public/assets/referenceImage/image2.png"
           alt="RoboXperience"
-          className="rounded-full md:w-100 p-5 "
+          className="rounded-3xl md:H-[40%] p-3 "
         />
       </div>
 

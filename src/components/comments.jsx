@@ -22,7 +22,7 @@ export default function Comments() {
   ];
 
   return (
-    <section className="flex flex-row justify-center items-center">
+    <section className="flex flex-row justify-center items-center my-[5%]">
       {comments.map((comment) => (
         <div
           key={comment.id}

@@ -1,14 +1,14 @@
 export default function HeroSection() {
   return (
-    <section className="flex flex-col lg:flex-row mx-[5%] my-[4%] font-poppins">
-      <div className=" items-center w-full">
+    <section className="flex flex-col lg:flex-row mx-[5%] mt-[100px] font-poppins">
+      <div className=" flex flex-col justify-center items-center w-full ">
         <img
           src="../public/assets/referenceImage/image.png"
           alt="Robô"
           className=" rounded-3xl shadow-3xl"
         />
 
-        <div className=" mt-3 flex justify-center space-x-[4px] md:space-x-[20px] text-[12px] mt-[25px] font-semibold ">
+        <div className=" flex justify-center space-x-[4px] md:space-x-[20px] text-[12px] mt-3 font-semibold ">
           <p className="bg-[#f0e2a8] text-[#94710a] rounded-xl px-[12px] py-[7px]">
             #inovação
           </p>
