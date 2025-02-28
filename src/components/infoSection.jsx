@@ -1,0 +1,46 @@
+import { Book } from "lucide-react";
+
+export default function Infosection() {
+  const content = [
+    {
+      id: 1,
+      name: "Programação",
+    },
+    {
+      id: 2,
+      name: "Motores",
+    },
+    {
+      id: 3,
+      name: "Sensores",
+    },
+    {
+      id: 2,
+      name: "Manutenção",
+    },
+  ];
+
+  return (
+    <section className="mx-[5%] my-[5%]">
+      <div className="flex flex-col justify-center items-center text-[#0a73b0] font-bold">
+        <h1 className="text-[22px] md:text-3xl">
+          OLHA SÓ O QUE VOCÊ VAI APRENDER
+        </h1>
+        <div className="flex flex-wrap justify-center text-white my-10">
+          {content.map((information) => (
+            <div
+              key={information.id}
+              className="bg-[#0a73b0] mx-5 my-5 flex flex-col justify-center items-center rounded-2xl w-30 h-30 font-semibold"
+            >
+              <Book className="my-2" />
+              <p>{information.name}</p>
+            </div>
+          ))}
+        </div>
+        <h1 className="text-[18px] md:text-2xl">
+          Fácil de montar, divertido de aprender!
+        </h1>
+      </div>
+    </section>
+  );
+}

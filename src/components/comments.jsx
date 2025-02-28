@@ -15,20 +15,20 @@ export default function Comments() {
     {
       id: 3,
       name: "Tcheuls Layra",
-      text: "Super recomendo! Material de qualidade e fácil de usar.",
+      text: "Super recomendo! Material de qualidade.",
       img: "/assets/userImages/user3.png",
       hidden: true,
     },
   ];
 
   return (
-    <section className="flex flex-row justify-center items-center my-[5%]">
+    <section className="flex flex-row justify-center items-center m-[5%]">
       {comments.map((comment) => (
         <div
           key={comment.id}
           className={` ${
             comment.hidden ? "hidden  md:flex" : ""
-          } flex-col bg-white rounded-2xl shadow-md mx-1 md:mx-[3%] p-2 px-4 `}
+          } flex-col bg-white rounded-2xl max-w-60 h-25 shadow-md mx-[2%] p-2 px-4 `}
         >
           <div className="flex flex-row items-center">
             <img
@@ -40,7 +40,7 @@ export default function Comments() {
               {comment.name}
             </h1>
           </div>
-          <p className="text-[14px] w-50 text-[#5A5A5A] pt-2">{comment.text}</p>
+          <p className="text-[14px] text-[#5A5A5A]  pt-2">{comment.text}</p>
         </div>
       ))}
     </section>

@@ -4,6 +4,7 @@ import HeroSection from "../components/heroSection.jsx";
 import "../components/comments.jsx";
 import Comements from "../components/comments.jsx";
 import AboutSection from "../components/aboutSection.jsx";
+import Infosection from "../components/infoSection.jsx";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <Comements />
       <AboutSection />
+      <Infosection />
     </div>
   );
 }
