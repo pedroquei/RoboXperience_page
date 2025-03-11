@@ -5,6 +5,8 @@ import "../components/comments.jsx";
 import Comements from "../components/comments.jsx";
 import AboutSection from "../components/aboutSection.jsx";
 import Infosection from "../components/infoSection.jsx";
+import ImageCarouse from "../components/imageCarouse.jsx";
+import CompetitionsSection from "../components/competitionsSection.jsx";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Comements />
       <AboutSection />
       <Infosection />
+      <ImageCarouse />
+      <CompetitionsSection />
     </div>
   );
 }

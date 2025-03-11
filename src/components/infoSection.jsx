@@ -1,22 +1,34 @@
-import { Book } from "lucide-react";
+import {
+  Book,
+  Camera,
+  CodeXml,
+  Computer,
+  Cpu,
+  Gauge,
+  Wrench,
+} from "lucide-react";
 
 export default function Infosection() {
   const content = [
     {
       id: 1,
       name: "Programação",
+      icon: <CodeXml />,
     },
     {
       id: 2,
       name: "Motores",
+      icon: <Gauge />,
     },
     {
       id: 3,
       name: "Sensores",
+      icon: <Cpu />,
     },
     {
       id: 2,
       name: "Manutenção",
+      icon: <Wrench />,
     },
   ];
 
@@ -32,7 +44,7 @@ export default function Infosection() {
               key={information.id}
               className="bg-[#0a73b0] mx-5 my-5 flex flex-col justify-center items-center rounded-2xl w-30 h-30 font-semibold"
             >
-              <Book className="my-2" />
+              {information.icon}
               <p>{information.name}</p>
             </div>
           ))}

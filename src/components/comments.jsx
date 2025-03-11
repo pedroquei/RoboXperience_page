@@ -14,7 +14,7 @@ export default function Comments() {
     },
     {
       id: 3,
-      name: "Tcheuls Layra",
+      name: "Tcheul's Layra",
       text: "Super recomendo! Material de qualidade.",
       img: "/assets/userImages/user3.png",
       hidden: true,

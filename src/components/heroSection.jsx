@@ -1,11 +1,11 @@
 export default function HeroSection() {
   return (
-    <section className="flex flex-col lg:flex-row mx-[5%] mt-[100px] font-poppins">
-      <div className=" flex flex-col justify-center items-center w-full ">
+    <section className="flex flex-col lg:flex-row mx-[5%] mt-[100px]">
+      <div className="flex flex-col justify-center items-center w-full">
         <img
           src="/assets/referenceImage/image.png"
           alt="Robô"
-          className=" rounded-3xl shadow-3xl"
+          className=" rounded-3xl shadow-3xl max-w-[80%] lg:max-w-full" // Aumentando o tamanho da imagem
         />
 
         <div className=" flex justify-center space-x-[4px] md:space-x-[20px] text-[12px] mt-3 font-semibold ">

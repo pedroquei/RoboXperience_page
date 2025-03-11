@@ -36,7 +36,7 @@ export default function Header() {
 
           {/* Botão "Saiba Mais" + Ícone do Menu Mobile */}
           <div className="ml-auto flex items-center gap-4">
-            <button className="bg-[#FDCB39] px-2 py-1 rounded-md text-[#0B2D4B] text-[15px]">
+            <button className="bg-[#FDCB39] px-2 py-1 rounded-xl text-[#0B2D4B] text-[15px]">
               Saiba Mais
             </button>
 
