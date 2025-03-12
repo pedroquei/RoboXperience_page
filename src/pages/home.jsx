@@ -7,6 +7,7 @@ import AboutSection from "../components/aboutSection.jsx";
 import Infosection from "../components/infoSection.jsx";
 import ImageCarouse from "../components/imageCarouse.jsx";
 import CompetitionsSection from "../components/competitionsSection.jsx";
+import SponsorsSection from "../components/sponsorsSection.jsx";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Infosection />
       <ImageCarouse />
       <CompetitionsSection />
+      <SponsorsSection />
     </div>
   );
 }
