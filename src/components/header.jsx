@@ -7,8 +7,7 @@ export default function Header() {
 
   const menuItem = {
     Início: "#Início",
-    Equipe: "#Equipe",
-    Títulos: "#Títulos",
+    News: "#News",
   };
 
   return (

@@ -1,12 +1,4 @@
-import {
-  Book,
-  Camera,
-  CodeXml,
-  Computer,
-  Cpu,
-  Gauge,
-  Wrench,
-} from "lucide-react";
+import { CodeXml, Cpu, Gauge, Wrench } from "lucide-react";
 
 export default function Infosection() {
   const content = [

@@ -15,6 +15,11 @@ export default function SponsorsSection() {
       name: "Instituto Federal Do Maranhão",
       image: "/public/assets/sponsors/sponsor3.png",
     },
+    {
+      id: 4,
+      name: "Universidade Federal do Maranhão",
+      image: "/public/assets/sponsors/sponsor4.png",
+    },
   ];
 
   return (
@@ -27,7 +32,9 @@ export default function SponsorsSection() {
           <img
             src={sponsor.image}
             alt={sponsor.name}
-            className={`${sponsor.id === 2 ? "w-20" : "w-30"} h-auto mx-10`}
+            className={`${
+              sponsor.id === 2 ? "w-20" : sponsor.id === 4 ? "w-20" : "w-30"
+            } h-auto mx-10`}
           />
         </div>
       ))}

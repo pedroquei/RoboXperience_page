@@ -1,11 +1,11 @@
 export default function HeroSection() {
   return (
-    <section className="flex flex-col lg:flex-row mx-[5%] mt-[100px]">
+    <section className="flex flex-col lg:flex-row mx-[5vw]  mt-30">
       <div className="flex flex-col justify-center items-center w-full">
         <img
           src="/assets/referenceImage/image.png"
           alt="Robô"
-          className=" rounded-3xl shadow-3xl max-w-[80%] lg:max-w-full" // Aumentando o tamanho da imagem
+          className=" rounded-3xl shadow-3xl max-w-[70vw] lg:max-w-full"
         />
 
         <div className=" flex justify-center space-x-[4px] md:space-x-[20px] text-[12px] mt-3 font-semibold ">
@@ -24,7 +24,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className=" pl-0 pt-6 lg:pl-10">
+      <div className=" pt-6 lg:pl-10">
         <h1 className="text-3xl md:text-3xl font-bold text-[#D9A611]">
           É um <span className="text-[#0B2D4B]">#entusiasta</span> também?
         </h1>
