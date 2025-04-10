@@ -1,8 +1,6 @@
 import {
   Instagram,
-  InstagramIcon,
   Linkedin,
-  LucideInstagram,
   Mail,
   MessageCircle,
   Youtube,
@@ -27,7 +25,7 @@ export default function Footer() {
       <div className="mx-[3vw] flex flex-col md:space-x-[10vw] gap-2 md:flex-row justify-center items-center">
         <div className="w-70">
           <img
-            src="/public/assets/logo/logo2.png"
+            src="/assets/logo/logo2.png"
             alt="Logo RoboXperience"
             className="h-25"
           />

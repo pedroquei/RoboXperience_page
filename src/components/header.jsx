@@ -1,13 +1,15 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("Início");
+  const navigate = useNavigate();
 
   const menuItem = {
-    Início: "#Início",
-    News: "#News",
+    Início: "/",
+    News: "/News",
   };
 
   return (
@@ -33,10 +35,13 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Botão "Saiba Mais" + Ícone do Menu Mobile */}
+          {/* Botão "Entrar" + Ícone do Menu Mobile */}
           <div className="ml-auto flex items-center gap-4">
-            <button className="bg-[#FDCB39] px-2 py-1 rounded-xl text-[#0B2D4B] text-[15px]">
-              Saiba Mais
+            <button
+              className="bg-[#FDCB39] px-2 py-1 rounded-xl text-[#0B2D4B] text-md font-regular"
+              onClick={() => navigate("/login")}
+            >
+              Entrar
             </button>
 
             {/* Botão do Menu Mobile */}
