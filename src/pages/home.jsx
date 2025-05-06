@@ -20,8 +20,8 @@ export default function Home() {
       <ImageCarouse />
       <CompetitionsSection />
       <SponsorsSection />
-      <h1 className="text-center text-2xl text-[#0A73B0] font-semibold p-5">
-        Não vai querer ficar de fora dessa,né?!
+      <h1 className="text-center text-md sm:text-2xl text-[#0A73B0] font-bold p-5">
+        Não vai querer ficar de fora dessa, né?!
       </h1>
       <Footer />
     </div>

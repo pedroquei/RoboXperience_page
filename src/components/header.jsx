@@ -9,11 +9,11 @@ export default function Header() {
 
   const menuItem = {
     Início: "/",
-    News: "/News",
+    Sobre: "/About",
   };
 
   return (
-    <header className="fixed top-0 bg-[#e8f1f2] w-[90%] mx-[5%] flex items-center rounded-b-2xl shadow-lg font-poppins z-50">
+    <header className="sticky top-0 bg-[#e8f1f2] w-[90vw] mx-[5vw] flex items-center rounded-b-2xl shadow-lg font-poppins z-50">
       <div className="bg-[#0B2D4B] w-full h-[60px] rounded-2xl mt-[10px] relative">
         <div className="mx-auto flex items-center h-full w-full px-4">
           {/* Logo */}
@@ -38,10 +38,10 @@ export default function Header() {
           {/* Botão "Entrar" + Ícone do Menu Mobile */}
           <div className="ml-auto flex items-center gap-4">
             <button
-              className="bg-[#FDCB39] px-2 py-1 rounded-xl text-[#0B2D4B] text-md font-regular"
+              className="hidden md:block bg-[#FDCB39] px-2 py-1 rounded-xl text-[#0B2D4B] text-md font-regular"
               onClick={() => navigate("/login")}
             >
-              Entrar
+              Acessar plataforma
             </button>
 
             {/* Botão do Menu Mobile */}

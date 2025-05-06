@@ -14,7 +14,7 @@ const ImageCarousel = () => {
       <h1 className="text-[#FDCB39] text-center text-2xl font-bold">
         E TEM MAIS...
       </h1>
-      <h2 className="text-white text-center text-xl font-semibold py-5 ">
+      <h2 className="text-white text-center text-md md:text-xl font-semibold py-5 ">
         Nossa equipe de robótica já brilhou em diversas competições! Confira:
       </h2>
       <div className=" mx-5 rounded-xl items-center overflow-hidden ">

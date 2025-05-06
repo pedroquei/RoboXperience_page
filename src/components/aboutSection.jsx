@@ -12,7 +12,7 @@ export default function AboutSection() {
 
       {/* Texto */}
       <div className="flex flex-col justify-center items-center lg:items-start lg:px-12">
-        <h1 className="font-bold text-2xl p-5 lg:pt-0 lg:text-3xl text-[#0B2D4B] text-center lg:text-left">
+        <h1 className="font-bold text-xl sm:text-2xl p-5 lg:pt-0 lg:text-3xl text-[#0B2D4B] text-center lg:text-left">
           AINDA NÃO CONHECE?
         </h1>
         <p className=" text-[#4E6071] text-base pb-3 lg:text-lg max-w-lg text-center lg:text-left">

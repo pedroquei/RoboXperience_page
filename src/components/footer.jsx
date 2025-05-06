@@ -9,7 +9,21 @@ import {
 export default function Footer() {
   const OpenInstagram = () => {
     window.open(
-      "https://www.instagram.com/roboxperience?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "https://www.instagram.com/roboxperience/?utm_source=ig_web_button_share_sheet",
+      "_blank"
+    );
+  };
+
+  const OpenLinkedin = () => {
+    window.open(
+      "https://www.linkedin.com/in/roboxperience-roboxperience-060306360/",
+      "_blank"
+    );
+  };
+
+  const OpenYoutube = () => {
+    window.open(
+      "https://www.youtube.com/channel/UCVz3D2pXXwa74quJBgc0cKQ",
       "_blank"
     );
   };
@@ -46,10 +60,17 @@ export default function Footer() {
             >
               <Instagram size={32} color="#0B2D4B" />
             </button>
-            <button className="bg-[#15B3F7] p-2 rounded-full">
+            <button
+              className="bg-[#15B3F7] p-2 rounded-full"
+              onClick={OpenLinkedin}
+            >
               <Linkedin size={32} color="#0B2D4B" />
             </button>
-            <button className="bg-[#15B3F7] p-2 rounded-full">
+
+            <button
+              className="bg-[#15B3F7] p-2 rounded-full"
+              onClick={OpenYoutube}
+            >
               <Youtube size={32} color="#0B2D4B" />
             </button>
           </div>
@@ -57,19 +78,11 @@ export default function Footer() {
         <div className="flex flex-col gap-2 items-center">
           <h1 className="text-[#FDCB39] text-xl font-semibold">Contato:</h1>
           <div className="flex flex-row items-center gap-2">
-            <Mail
-              size={42}
-              color="#0B2D4B"
-              className="bg-[#15B3F7] p-2 rounded-full"
-            />
+            <Mail size={32} color="#15B3F7" />
             <p>roboxperience0@gmail.com</p>
           </div>
           <div className="flex flex-row items-center gap-2">
-            <MessageCircle
-              size={42}
-              color="#0B2D4B"
-              className="bg-[#15B3F7] p-2 rounded-full"
-            />
+            <MessageCircle size={32} color="#15B3F7" />
             <p>(99) 9 8503-9425</p>
           </div>
         </div>

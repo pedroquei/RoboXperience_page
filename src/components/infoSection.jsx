@@ -27,9 +27,7 @@ export default function Infosection() {
   return (
     <section className="mx-[5vw] my-[5vh]">
       <div className="flex flex-col justify-center items-center text-[#0a73b0] font-bold">
-        <h1 className="text-[22px] md:text-3xl">
-          OLHA SÓ O QUE VOCÊ VAI APRENDER
-        </h1>
+        <h1 className="text-lg md:text-3xl">OLHA SÓ O QUE VOCÊ VAI APRENDER</h1>
         <div className="flex flex-wrap justify-center text-white my-10">
           {content.map((information) => (
             <div
@@ -41,8 +39,9 @@ export default function Infosection() {
             </div>
           ))}
         </div>
-        <h1 className="text-[18px] md:text-2xl">
-          Fácil de montar, divertido de aprender!
+        <h1 className="text-2xl md:text-xl">FÁCIL DE MONTAR</h1>
+        <h1 className="text-xl md:text-2xl text-[#fcbe03]">
+          DIVERTIDO DE APRENDER!
         </h1>
       </div>
     </section>

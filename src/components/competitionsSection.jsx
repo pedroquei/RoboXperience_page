@@ -34,11 +34,11 @@ export default function CompetitionsSection() {
 
       <div>
         <>
-          <div className="flex flex-row justify-center items-center font-bold">
+          <div className="flex flex-row justify-center items-center font-bold text-sm md:text-lg">
             {placements.map((placement) => (
               <div
                 key={placement.id}
-                className={`bg-[#0a73b0] text-white h-70 w-35 flex flex-col p-4 mx-[1vw] items-center text-center rounded-xl ${
+                className={`bg-[#0a73b0] text-white h-70 w-30 sm:w-40 flex flex-col p-4 mx-[1vw] items-center text-center rounded-xl ${
                   placement.id === 1
                     ? "mt-15"
                     : placement.id === 3
@@ -47,7 +47,7 @@ export default function CompetitionsSection() {
                 } `}
               >
                 <p
-                  className={`w-full py-2 rounded-lg shadow-xl text-xl ${
+                  className={`w-full py-2 rounded-lg shadow-xl ${
                     placement.id === 1
                       ? "bg-[#B5B5B5]"
                       : placement.id === 2
@@ -60,7 +60,7 @@ export default function CompetitionsSection() {
                 >
                   {placement.placing}
                 </p>
-                <p className="my-auto text-[#FCBE03] font-black mt-auto">
+                <p className="my-auto text-[#FCBE03] font-black mt-auto ">
                   {placement.competitionName}
                 </p>
                 <p>{placement.local}</p>
