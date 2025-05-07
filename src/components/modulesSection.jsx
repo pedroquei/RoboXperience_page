@@ -1,0 +1,45 @@
+export default function ModulesSection() {
+  const modulos = [
+    {
+      id: 1,
+      title: "Módulo 1",
+      description:
+        "O módulo 1 do RoboXperience apresenta aos alunos os conceitos fundamentais de robótica e eletrônica, começando pela introdução ao Arduino e ao uso da Arduino IDE. Por meio de aulas teóricas, exercícios práticos e experimentos com a plataforma, os estudantes aprendem lógica de programação e manuseio de componentes básicos, construindo uma base sólida para as etapas seguintes.",
+    },
+    {
+      id: 2,
+      title: "Módulo 2",
+      description:
+        "No módulo 2, os desafios avançam: os alunos passam a explorar o uso mais complexo de motores e atuadores em conjunto com diferentes sensores, aprofundando-se em automatização. Eles desenvolvem aplicações práticas que envolvem comunicação de dados via infravermelho e Bluetooth, aprendendo técnicas avançadas de programação para integrar hardware e software. ",
+    },
+    {
+      id: 3,
+      title: "Módulo 3",
+      description:
+        "Já no módulo 3, os estudantes devem aplicar tudo o que aprenderam em projetos de maior complexidade, que exigem montagem e programação com precisão. Trabalham com sensores sofisticados e combinam múltiplos componentes eletrônicos, realizando análise detalhada de funcionamento e calibração dos kits.",
+    },
+  ];
+
+  return (
+    <section className="p-4  bg-[#0A73B0] rounded-2xl mx-[5vw] my-[3vw] flex flex-col justify-center items-center ">
+      <h2 className="text-2xl font-bold text-[#FDCB39] mb-4">
+        Estrutura do Curso
+      </h2>
+      <p className="max-w-3xl mb-4 text-white md:text-xl text-center">
+        O curso é dividido em três módulos progressivos de dificuldade,
+        permitindo que os estudantes avancem de forma consistente, combinando
+        teoria e prática.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 ">
+        {modulos.map((modulos, id) => (
+          <div key={id} className="bg-white p-4 rounded-lg shadow-md">
+            <h1 className="text-xl font-bold text-[#0A73B0] text-center mb-2">
+              {modulos.title}
+            </h1>
+            <p>{modulos.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

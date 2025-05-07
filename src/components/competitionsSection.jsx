@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import animationData from "/public/assets/trophy/trophyAnimated.json";
+import animationData from "/public/assets/animations/trophyAnimated.json";
 
 const placements = [
   {

@@ -1,10 +1,9 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState("Início");
   const navigate = useNavigate();
 
   const menuItem = {
@@ -13,29 +12,28 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 bg-[#e8f1f2] w-[90vw] mx-[5vw] flex items-center rounded-b-2xl shadow-lg font-poppins z-50">
+    <header className="sticky top-0 bg-[#e8f1f2]  mx-[5vw] flex items-center rounded-b-2xl shadow-lg font-poppins z-50">
       <div className="bg-[#0B2D4B] w-full h-[60px] rounded-2xl mt-[10px] relative">
         <div className="mx-auto flex items-center h-full w-full px-4">
-          {/* Logo */}
           <img src="/assets/logo/logo.png" alt="logo" className="h-[30px]" />
 
           {/* Menu Desktop */}
           <nav className="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
-            {Object.keys(menuItem).map((item) => (
-              <a
-                key={item}
-                href={menuItem[item]}
-                className={`hover:text-gray-300 ${
-                  activeItem === item ? "text-white" : "text-white opacity-50"
-                }`}
-                onClick={() => setActiveItem(item)}
+            {Object.entries(menuItem).map(([label, path]) => (
+              <NavLink
+                key={label}
+                to={path}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white"
+                    : "text-white opacity-50 hover:text-gray-300"
+                }
               >
-                {item}
-              </a>
+                {label}
+              </NavLink>
             ))}
           </nav>
 
-          {/* Botão "Entrar" + Ícone do Menu Mobile */}
           <div className="ml-auto flex items-center gap-4">
             <button
               className="hidden md:block bg-[#FDCB39] px-2 py-1 rounded-xl text-[#0B2D4B] text-md font-regular"
@@ -44,7 +42,6 @@ export default function Header() {
               Acessar plataforma
             </button>
 
-            {/* Botão do Menu Mobile */}
             <button
               className="md:hidden"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -57,21 +54,20 @@ export default function Header() {
 
         {/* Menu Mobile */}
         {menuOpen && (
-          <nav className="md:hidden flex flex-col space-y-2 bg-[#0B2D4B] text-white p-4 rounded-2xl absolute top-[70px] right-5 w-[200px] shadow-lg">
-            {Object.keys(menuItem).map((item) => (
-              <a
-                key={item}
-                href={menuItem[item]}
-                className={`hover:text-gray-300 ${
-                  activeItem === item ? "text-white" : "text-white opacity-50"
-                }`}
-                onClick={() => {
-                  setActiveItem(item);
-                  setMenuOpen(false);
-                }}
+          <nav className="md:hidden flex flex-col space-y-2 bg-[#0B2D4B] text-white p-4 rounded-2xl absolute top-[70px] right-1 w-[200px] shadow-lg">
+            {Object.entries(menuItem).map(([label, path]) => (
+              <NavLink
+                key={label}
+                to={path}
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white"
+                    : "text-white opacity-50 hover:text-gray-300"
+                }
               >
-                {item}
-              </a>
+                {label}
+              </NavLink>
             ))}
           </nav>
         )}
