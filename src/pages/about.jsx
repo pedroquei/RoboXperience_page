@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Lottie from "lottie-react";
 import animationData from "/public/assets/animations/arrow-animated.json";
 import ModulesSection from "../components/modulesSection";
+import ValuesSection from "../components/valuesSection";
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
       <Header />
 
       <section className="flex flex-col mx-[5vw] justify-center items-center">
-        <div className="flex flex-col justify-center items-center mt-[5vw] md:mt-[3vw]">
+        <div className="flex flex-col justify-center items-center mt-[5vw] md:mt-[2vw]">
           <img
             src="/assets/logo/logorxh.png"
             alt="logo"
@@ -29,7 +30,7 @@ export default function About() {
         <Lottie animationData={animationData} className="w-28" />
       </section>
 
-      <section className="flex flex-col justify-center items-center mx-[5vw]  my-[3vw]">
+      <section className="flex flex-col justify-center items-center mx-[5vw] mt-10">
         <h1 className="bg-[#FDCB39] px-5 py-2 text-xl text-[#0B2D4B] font-bold rounded-t-2xl ">
           Objetivo
         </h1>
@@ -41,6 +42,7 @@ export default function About() {
         </p>
       </section>
 
+      <ValuesSection />
       <ModulesSection />
       <Footer />
     </div>

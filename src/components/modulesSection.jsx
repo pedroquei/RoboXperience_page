@@ -16,20 +16,22 @@ export default function ModulesSection() {
       id: 3,
       title: "Módulo 3",
       description:
-        "Já no módulo 3, os estudantes devem aplicar tudo o que aprenderam em projetos de maior complexidade, que exigem montagem e programação com precisão. Trabalham com sensores sofisticados e combinam múltiplos componentes eletrônicos, realizando análise detalhada de funcionamento e calibração dos kits.",
+        "Já no módulo 3, os estudantes devem aplicar tudo o que aprenderam em projetos de maior complexidade, que exigem montagem e programação com precisão.Trabalham com sensores sofisticados e combinam múltiplos componentes eletrônicos, realizando análise detalhada de funcionamento e calibração dos kits.",
     },
   ];
 
   return (
-    <section className="p-4  bg-[#0A73B0] rounded-2xl mx-[5vw] my-[3vw] flex flex-col justify-center items-center ">
-      <h2 className="text-2xl font-bold text-[#FDCB39] mb-4">
-        Estrutura do Curso
-      </h2>
-      <p className="max-w-3xl mb-4 text-white md:text-xl text-center">
-        O curso é dividido em três módulos progressivos de dificuldade,
-        permitindo que os estudantes avancem de forma consistente, combinando
-        teoria e prática.
-      </p>
+    <section className="p-4 mx-[5vw] my-[3vw] flex flex-col justify-center items-center ">
+      <div className="flex flex-col items-center justify-center mb-10">
+        <h2 className="text-2xl font-bold text-[#FDCB39] mb-4">
+          Estrutura do Curso
+        </h2>
+        <p className="max-w-3xl mb-4 text-gray-600 md:text-xl text-center">
+          O curso é dividido em três módulos progressivos de dificuldade,
+          permitindo que os estudantes avancem de forma consistente, combinando
+          teoria e prática.
+        </p>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 ">
         {modulos.map((modulos, id) => (
           <div key={id} className="bg-white p-4 rounded-lg shadow-md">
