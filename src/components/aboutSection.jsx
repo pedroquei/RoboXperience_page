@@ -2,9 +2,9 @@ export default function AboutSection() {
   return (
     <section className="bg-[#fcbe03] rounded-2xl m-[5%] p-5 flex flex-col lg:flex-row items-center">
       {/* Imagem */}
-      <div className="bg-gray-500 rounded-2xl flex justify-center w-full lg:w-[40%] p-3">
+      <div className="bg-gray-600 rounded-2xl flex justify-center w-full lg:w-[40%] p-3">
         <img
-          src="/assets/referenceImage/image2.png"
+          src="/assets/referenceImage/image2.webp"
           alt="RoboXperience"
           className="rounded-xl md:h-[60%] max-w-full"
         />

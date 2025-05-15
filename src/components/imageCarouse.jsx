@@ -3,10 +3,10 @@ import "C:/Users/tec56/RoboXperience_page/src/index.css"; // Importando o CSS pe
 
 const ImageCarousel = () => {
   const images = [
-    "public/assets/carouseImages/equipe1.jpg",
-    "public/assets/carouseImages/equipe2.jpg",
-    "public/assets/carouseImages/equipe3.jpg",
-    "public/assets/carouseImages/equipe4.jpg",
+    "public/assets/carouseImages/equipe1.webp",
+    "public/assets/carouseImages/equipe2.webp",
+    "public/assets/carouseImages/equipe3.webp",
+    "public/assets/carouseImages/equipe4.webp",
   ];
 
   return (

@@ -1,14 +1,11 @@
 function ModulesCard({ id, title, description }) {
   return (
-    <div
-      key={id}
-      className="bg-[#0A73B0]/20 p-4 rounded-lg shadow-lg hover:shadow-xl hover:bg-[#0A73B0]/40  transition-all duration-300"
-    >
-      <h1 className="text-xl font-bold text-[#0A73B0] text-center mb-2">
+    <article className="bg-[#0A73B0]/20 p-4 rounded-lg shadow-lg hover:shadow-xl hover:bg-[#0A73B0]/40  transition-all duration-300">
+      <h3 className="text-xl font-bold text-[#0A73B0] text-center mb-2">
         {title}
-      </h1>
+      </h3>
       <p className="text-center">{description}</p>
-    </div>
+    </article>
   );
 }
 
@@ -46,7 +43,7 @@ export default function ModulesSection() {
           consistente, combinando teoria e prática.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         {modulos.map((mod) => (
           <ModulesCard
             key={mod.id}

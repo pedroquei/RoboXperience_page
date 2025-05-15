@@ -2,13 +2,18 @@ export default function Login() {
   return (
     <section className="flex flex-col lg:flex-row items-center h-screen px-[10vw] bg-[#0B2D4B]">
       <div>
+        <h1 className="text-3xl text-white">
+          Ops, isso ainda não está pronto!
+        </h1>
+      </div>
+      {/* Login Form 
+      <div>
         <img
           src="/assets/logo/logo2.png"
           alt="Logo"
           className="w-[50vw] mt-10"
         />
       </div>
-
       <div className="flex flex-col items-center justify-center w-1/2 mx-[10vw] rounded-2xl bg-white">
         <h1 className="text-[#0B2D4B] font-bold text-3xl ">Login</h1>
         <h2 className="text-[#0B2D4B] font-semibold text-md ">
@@ -38,6 +43,7 @@ export default function Login() {
           </h3>
         </form>
       </div>
+      */}
     </section>
   );
 }

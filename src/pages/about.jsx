@@ -9,11 +9,10 @@ export default function About() {
   return (
     <div>
       <Header />
-
       <section className="flex flex-col mx-[5vw] justify-center items-center">
         <div className="flex flex-col justify-center items-center mt-[5vw] md:mt-[2vw] mx-5">
           <img
-            src="/assets/logo/logorxh.png"
+            src="/assets/logo/logorxh.webp"
             alt="logo"
             className="rounded-2xl min-w-[344px] w-[40vw] "
           />

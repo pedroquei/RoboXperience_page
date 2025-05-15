@@ -94,7 +94,7 @@ export default function ValuesSection() {
           color="white"
         />
 
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col xl:flex-row gap-3">
           {values.map((value) => (
             <ValueCard
               key={value.id}
