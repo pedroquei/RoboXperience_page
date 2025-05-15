@@ -1,3 +1,17 @@
+function ModulesCard({ id, title, description }) {
+  return (
+    <div
+      key={id}
+      className="bg-[#0A73B0]/20 p-4 rounded-lg shadow-lg hover:shadow-xl hover:bg-[#0A73B0]/40  transition-all duration-300"
+    >
+      <h1 className="text-xl font-bold text-[#0A73B0] text-center mb-2">
+        {title}
+      </h1>
+      <p className="text-center">{description}</p>
+    </div>
+  );
+}
+
 export default function ModulesSection() {
   const modulos = [
     {
@@ -23,23 +37,23 @@ export default function ModulesSection() {
   return (
     <section className="p-4 mx-[5vw] my-[3vw] flex flex-col justify-center items-center ">
       <div className="flex flex-col items-center justify-center mb-10">
-        <h2 className="text-2xl font-bold text-[#FDCB39] mb-4">
+        <h2 className="text-2xl font-bold text-[#0A73B0] mb-4">
           Estrutura do Curso
         </h2>
         <p className="max-w-3xl mb-4 text-gray-600 md:text-xl text-center">
-          O curso é dividido em três módulos progressivos de dificuldade,
-          permitindo que os estudantes avancem de forma consistente, combinando
-          teoria e prática.
+          O RoboXperience é dividido em três módulos progressivos de
+          dificuldade, permitindo que os estudantes avancem de forma
+          consistente, combinando teoria e prática.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 ">
-        {modulos.map((modulos, id) => (
-          <div key={id} className="bg-white p-4 rounded-lg shadow-md">
-            <h1 className="text-xl font-bold text-[#0A73B0] text-center mb-2">
-              {modulos.title}
-            </h1>
-            <p>{modulos.description}</p>
-          </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 ">
+        {modulos.map((mod) => (
+          <ModulesCard
+            key={mod.id}
+            id={mod.id}
+            title={mod.title}
+            description={mod.description}
+          />
         ))}
       </div>
     </section>

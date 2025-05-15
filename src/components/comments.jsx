@@ -22,7 +22,7 @@ export default function Comments() {
   ];
 
   return (
-    <section className="flex flex-row justify-center items-center m-[5vw]">
+    <section className="flex flex-row justify-center items-center my-10 mx-[5vw] sm:m-[5vw]">
       {comments.map((comment) => (
         <div
           key={comment.id}
@@ -40,7 +40,7 @@ export default function Comments() {
               {comment.name}
             </h1>
           </div>
-          <p className="text-sm text-[#5A5A5A] mt-2">{comment.text}</p>
+          <p className="text-sm text-gray-600 mt-2">{comment.text}</p>
         </div>
       ))}
     </section>

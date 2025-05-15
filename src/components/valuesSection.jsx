@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import { EqualIcon, Plus } from "lucide-react";
 
+{
+  /* botão animado */
+}
 function ValueCard({ title, description }) {
   const [active, setActive] = useState(false);
 

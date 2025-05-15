@@ -11,26 +11,26 @@ export default function About() {
       <Header />
 
       <section className="flex flex-col mx-[5vw] justify-center items-center">
-        <div className="flex flex-col justify-center items-center mt-[5vw] md:mt-[2vw]">
+        <div className="flex flex-col justify-center items-center mt-[5vw] md:mt-[2vw] mx-5">
           <img
             src="/assets/logo/logorxh.png"
             alt="logo"
-            className="rounded-2xl min-w-[300px] w-[40vw] "
+            className="rounded-2xl min-w-[344px] w-[40vw] "
           />
           <h1 className="px-10 py-2 bg-[#FDCB39] mt-[-25px] rounded-xl text-[#0B2D4B] text-lg md-text-2xl font-bold">
             QUEM SOMOS?
           </h1>
         </div>
-        <p className=" text-gray-600 text-center m-5 md:mx-50 md:text-xl">
+        <p className=" text-gray-600 text-center mt-10 md:mx-50 md:text-xl">
           Iniciado em 2023 e coordenado pelos professores Dr. Daniel Duarte
           Costa e Dr. Antônio José Dias Vieira, ligado à Fábrica de Inovação do
           IFMA - Campus Imperatriz, o RoboXperience desenvolve kits educacionais
           de robótica para aprendizado prático e acessível.
         </p>
-        <Lottie animationData={animationData} className="w-28" />
+        <Lottie animationData={animationData} className="w-28 mb-10 sm:mb-0" />
       </section>
 
-      <section className="flex flex-col justify-center items-center mx-[5vw] mt-10">
+      <section className="flex flex-col justify-center items-center mx-[5vw] sm:mt-10">
         <h1 className="bg-[#FDCB39] px-5 py-2 text-xl text-[#0B2D4B] font-bold rounded-t-2xl ">
           Objetivo
         </h1>
