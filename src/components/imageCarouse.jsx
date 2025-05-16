@@ -1,5 +1,4 @@
-import React from "react";
-import "C:/Users/tec56/RoboXperience_page/src/index.css"; // Importando o CSS personalizado
+import "../index.css"; // Importando o CSS personalizado
 
 const ImageCarousel = () => {
   const images = [
