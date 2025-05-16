@@ -2,10 +2,10 @@ import "../index.css"; // Importando o CSS personalizado
 
 const ImageCarousel = () => {
   const images = [
-    "public/assets/carouseImages/equipe1.webp",
-    "public/assets/carouseImages/equipe2.webp",
-    "public/assets/carouseImages/equipe3.webp",
-    "public/assets/carouseImages/equipe4.webp",
+    "/assets/carouseImages/equipe1.webp",
+    "/assets/carouseImages/equipe2.webp",
+    "/assets/carouseImages/equipe3.webp",
+    "/assets/carouseImages/equipe4.webp",
   ];
 
   return (

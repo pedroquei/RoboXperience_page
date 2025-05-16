@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import { EqualIcon, Plus } from "lucide-react";
 
