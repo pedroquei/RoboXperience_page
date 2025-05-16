@@ -15,7 +15,7 @@ export default function Header() {
     <header className="sticky top-0 bg-[#e8f1f2]  mx-[5vw] flex items-center rounded-b-2xl shadow-lg font-poppins z-50">
       <div className="bg-[#0B2D4B] w-full h-[60px] rounded-2xl mt-[10px] relative">
         <div className="mx-auto flex items-center h-full w-full px-4">
-          <img src="/assets/logo/logo.png" alt="logo" className="h-[30px]" />
+          <img src="/assets/logo/logo.svg" alt="logo" className="h-[30px]" />
 
           {/* Menu Desktop */}
           <nav className="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
