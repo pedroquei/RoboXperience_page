@@ -3,22 +3,22 @@ export default function SponsorsSection() {
     {
       id: 1,
       name: "Fábrica de Inovação",
-      image: "/assets/sponsors/sponsor1.png",
+      image: "/assets/sponsors/sponsor1.webp",
     },
     {
       id: 2,
       name: "Júpiter Internet",
-      image: "/assets/sponsors/sponsor2.png",
+      image: "/assets/sponsors/sponsor2.webp",
     },
     {
       id: 3,
       name: "Instituto Federal Do Maranhão",
-      image: "/assets/sponsors/sponsor3.png",
+      image: "/assets/sponsors/sponsor3.webp",
     },
     {
       id: 4,
       name: "Universidade Federal do Maranhão",
-      image: "/assets/sponsors/sponsor4.png",
+      image: "/assets/sponsors/sponsor4.webp",
     },
   ];
 

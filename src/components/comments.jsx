@@ -4,19 +4,19 @@ export default function Comments() {
       id: 1,
       name: "Andressa Silva",
       text: "O aprendizado com o kit ficou muito mais fácil!",
-      img: "/assets/userImages/user1.png",
+      img: "/assets/userImages/user1.webp",
     },
     {
       id: 2,
       name: "Uriel Werneck",
       text: "O kit me ajudou bastante nas aulas.",
-      img: "/assets/userImages/user2.png",
+      img: "/assets/userImages/user2.webp",
     },
     {
       id: 3,
       name: "Tcheul's Layra",
       text: "Super recomendo! Material de qualidade.",
-      img: "/assets/userImages/user3.png",
+      img: "/assets/userImages/user3.webp",
       hidden: true,
     },
   ];
