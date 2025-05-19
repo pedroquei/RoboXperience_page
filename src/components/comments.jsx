@@ -34,6 +34,7 @@ export default function Comments() {
             <img
               src={comment.img}
               alt={comment.name}
+              loading="lazy"
               className="rounded-full w-8"
             />
             <h1 className="pl-2 font-bold text-[#0B2D4B] text-sm">

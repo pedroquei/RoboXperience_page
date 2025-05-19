@@ -1,4 +1,4 @@
-function ModulesCard({ id, title, description }) {
+function ModulesCard({ title, description }) {
   return (
     <article className="bg-[#0A73B0]/20 p-4 rounded-lg shadow-lg hover:shadow-xl hover:bg-[#0A73B0]/40  transition-all duration-300">
       <h3 className="text-xl font-bold text-[#0A73B0] text-center mb-2">
@@ -47,7 +47,6 @@ export default function ModulesSection() {
         {modulos.map((mod) => (
           <ModulesCard
             key={mod.id}
-            id={mod.id}
             title={mod.title}
             description={mod.description}
           />

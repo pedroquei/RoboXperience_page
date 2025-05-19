@@ -32,9 +32,8 @@ export default function SponsorsSection() {
           <img
             src={sponsor.image}
             alt={sponsor.name}
-            className={`${
-              sponsor.id === 2 ? "w-20" : sponsor.id === 4 ? "w-20" : "w-30"
-            } h-auto mx-10`}
+            loading="lazy"
+            className={`${sponsor.id === 4 ? "w-20" : "w-30"} h-auto mx-10`}
           />
         </div>
       ))}

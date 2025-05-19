@@ -39,8 +39,9 @@ export default function Footer() {
       <div className="mx-[3vw] flex flex-col md:space-x-[10vw] gap-2 md:flex-row justify-center items-center">
         <div className="w-70">
           <img
-            src="/assets/logo/logo2.png"
+            src="/assets/logo/logo2.webp"
             alt="Logo RoboXperience"
+            loading="lazy"
             className="h-25"
           />
           <p>Instituto Federal do Maranhão Campus Imperatriz</p>

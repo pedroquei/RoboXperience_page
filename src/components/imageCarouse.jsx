@@ -23,6 +23,7 @@ const ImageCarousel = () => {
               key={index}
               src={src}
               alt={`Slide ${index}`}
+              loading="lazy"
               className="h-50 md:h-70 w-auto object-cover "
             />
           ))}

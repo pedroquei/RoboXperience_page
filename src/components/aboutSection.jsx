@@ -6,6 +6,7 @@ export default function AboutSection() {
         <img
           src="/assets/referenceImage/image2.webp"
           alt="RoboXperience"
+          loading="lazy"
           className="rounded-xl md:h-[60%] max-w-full"
         />
       </div>
