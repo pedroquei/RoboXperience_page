@@ -5,8 +5,7 @@ export default function HeroSection() {
         <img
           src="/assets/referenceImage/arduRobot.webp"
           alt="Robô"
-          loading="lazy"
-          className=" rounded-3xl shadow-3xl"
+          className=" rounded-3xl shadow-3xl w-80 sm:w-100 md:w-120"
         />
 
         <div className=" flex justify-center space-x-[4px] md:space-x-[1vw] text-[9px] md:text-sm mt-3 font-semibold ">
